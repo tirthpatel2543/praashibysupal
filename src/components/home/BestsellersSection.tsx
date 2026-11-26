@@ -89,16 +89,16 @@ export const BestsellersSection: React.FC = () => {
                 {/* Product Info */}
                 <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between">
                   <div>
-                    <div className="flex items-center justify-between text-[10px] text-[#9B4F52] uppercase tracking-widest mb-1 font-sans">
+                    <div className="flex items-center justify-between text-xs text-[#9B4F52] font-bold uppercase tracking-wider mb-1 font-sans">
                       <span>{product.category}</span>
-                      {product.karat && <span className="text-[#806F72]">{product.karat}</span>}
+                      {product.karat && <span className="text-[#6D5D60] font-semibold">{product.karat}</span>}
                     </div>
 
-                    <h3 className="font-serif font-medium text-lg text-[#4A252B] group-hover:text-[#9B4F52] transition-colors leading-snug line-clamp-1">
+                    <h3 className="font-serif font-bold text-lg text-[#4A252B] group-hover:text-[#9B4F52] transition-colors leading-snug line-clamp-1">
                       {product.name}
                     </h3>
 
-                    <p className="font-sans text-[11px] text-[#806F72] mt-1.5 line-clamp-2 leading-relaxed font-light">
+                    <p className="font-sans text-xs text-[#6D5D60] mt-1.5 line-clamp-2 leading-relaxed font-medium">
                       {product.description}
                     </p>
                   </div>
@@ -106,11 +106,11 @@ export const BestsellersSection: React.FC = () => {
                   {/* Price and Add to Bag */}
                   <div className="pt-4 mt-3 border-t border-[#EDE1D6] flex items-center justify-between">
                     <div>
-                      <div className="font-serif font-medium text-lg text-[#4A252B]">
+                      <div className="font-serif font-bold text-lg sm:text-xl text-[#4A252B]">
                         ₹{product.price.toLocaleString('en-IN')}
                       </div>
                       {product.originalPrice && (
-                        <div className="text-[11px] text-[#806F72] line-through">
+                        <div className="text-xs text-[#806F72] line-through font-medium">
                           ₹{product.originalPrice.toLocaleString('en-IN')}
                         </div>
                       )}
@@ -119,9 +119,9 @@ export const BestsellersSection: React.FC = () => {
                     <button
                       onClick={() => addToCart(product)}
                       aria-label="Add to shopping bag"
-                      className="px-3.5 py-2 rounded-full bg-[#4A252B] text-white hover:bg-[#9B4F52] text-[10px] uppercase tracking-wider font-semibold flex items-center gap-1.5 transition-colors shadow-sm"
+                      className="px-4 py-2 rounded-full bg-[#4A252B] text-white hover:bg-[#9B4F52] text-xs uppercase tracking-wider font-bold flex items-center gap-1.5 transition-colors shadow-sm"
                     >
-                      <ShoppingBag size={13} />
+                      <ShoppingBag size={14} />
                       <span>Add</span>
                     </button>
                   </div>

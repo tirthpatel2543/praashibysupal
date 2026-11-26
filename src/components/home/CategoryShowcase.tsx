@@ -111,14 +111,14 @@ export const CategoryShowcase: React.FC = () => {
               {/* Category Meta */}
               <div className="p-3.5 flex flex-col justify-between flex-1">
                 <div>
-                  <span className="font-sans text-[9px] uppercase tracking-[0.18em] text-[#9B4F52] block">
+                  <span className="font-sans text-xs font-bold uppercase tracking-wider text-[#9B4F52] block">
                     {tile.piecesCount}
                   </span>
-                  <h3 className="font-serif font-medium text-sm sm:text-base text-[#4A252B] mt-0.5 group-hover:text-[#9B4F52] transition-colors">
+                  <h3 className="font-serif font-bold text-sm sm:text-base text-[#4A252B] mt-0.5 group-hover:text-[#9B4F52] transition-colors">
                     {tile.title}
                   </h3>
                 </div>
-                <p className="font-sans text-[10px] text-[#806F72] mt-1.5 line-clamp-2 font-light leading-relaxed">
+                <p className="font-sans text-xs text-[#6D5D60] mt-1.5 line-clamp-2 font-medium leading-relaxed">
                   {tile.description}
                 </p>
               </div>

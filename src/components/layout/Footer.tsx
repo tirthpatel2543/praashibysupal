@@ -151,14 +151,19 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Footer Bottom Line */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#DFC1B5]/60 font-sans tracking-wide">
-          <div>
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#DFC1B5]/80 font-sans tracking-wide">
+          <div className="font-medium text-center sm:text-left">
             &copy; 2026 Praashi by Supal. All rights reserved. Registered Indian Trademark.
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 font-semibold">
             <span>BIS 916 Hallmarked</span>
             <span>Kimberley Process Compliant</span>
-            <span>Privacy & Terms</span>
+            <button
+              onClick={() => navigate('/admin/login')}
+              className="text-[#F3E5AB] hover:text-white uppercase tracking-wider text-[11px] font-bold underline transition-colors"
+            >
+              Atelier Admin Portal (/admin)
+            </button>
           </div>
         </div>
       </div>

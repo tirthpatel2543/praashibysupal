@@ -122,23 +122,24 @@ export const AdminLogin: React.FC = () => {
 
         {/* Development Demo Credentials Autofill Helper */}
         <div className="mt-8 pt-6 border-t border-[#F0E6DE] text-center">
-          <div className="p-3.5 rounded-xl bg-[#FAF6F2] border border-[#EADBCE] text-left">
-            <div className="flex items-center justify-between mb-1.5">
-              <span className="font-sans text-[10px] uppercase tracking-wider font-bold text-[#4A252B] flex items-center gap-1.5">
-                <KeyRound size={12} className="text-[#C5A059]" />
-                Development Demo Account
+          <div className="p-4 rounded-xl bg-[#FAF6F2] border border-[#EADBCE] text-left">
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-sans text-xs uppercase tracking-wider font-bold text-[#4A252B] flex items-center gap-1.5">
+                <KeyRound size={14} className="text-[#C5A059]" />
+                Demo Admin Credentials
               </span>
               <button
                 type="button"
                 onClick={handleFillDemo}
-                className="text-[10px] font-semibold text-[#9B4F52] hover:underline uppercase tracking-wider"
+                className="px-2.5 py-1 rounded-md bg-[#4A252B] text-white text-[11px] font-bold uppercase tracking-wider hover:bg-[#9B4F52] transition-colors"
               >
-                Autofill
+                1-Click Autofill
               </button>
             </div>
-            <p className="text-[11px] text-[#806F72] leading-tight">
-              Configured via <code className="text-[#4A252B] font-mono">.env</code>. See <code className="text-[#4A252B] font-mono">ADMIN_CREDENTIALS.md</code> for private credentials.
-            </p>
+            <div className="text-xs text-[#6D5D60] space-y-0.5">
+              <p><strong className="text-[#4A252B]">Email:</strong> admin@praashibysupal.com</p>
+              <p><strong className="text-[#4A252B]">Password:</strong> Praashi@Admin2026!</p>
+            </div>
           </div>
         </div>
       </div>

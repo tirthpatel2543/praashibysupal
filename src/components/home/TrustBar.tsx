@@ -39,10 +39,10 @@ export const TrustBar: React.FC = () => {
                 <Icon size={20} strokeWidth={1.4} />
               </div>
               <div>
-                <h4 className="font-serif font-medium text-[15px] text-[#4A252B] leading-tight">
+                <h4 className="font-serif font-bold text-sm sm:text-base text-[#4A252B] leading-tight">
                   {item.title}
                 </h4>
-                <p className="font-sans text-[11px] text-[#806F72] mt-1 leading-relaxed">
+                <p className="font-sans text-xs text-[#6D5D60] mt-1 leading-relaxed font-medium">
                   {item.subtitle}
                 </p>
               </div>
