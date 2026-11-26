@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment variables & private credentials
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+ADMIN_CREDENTIALS.md
+
+# SQLite Database files & WAL journals
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+praashi.db
+praashi.db-shm
+praashi.db-wal
+
+# Playwright & Testing artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.playwright-mcp/
+
+# Editor & Tooling directories
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.bolt/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
