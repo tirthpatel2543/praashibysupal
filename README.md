@@ -39,8 +39,8 @@
 ### 1. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/tirth-patel29/praashi-jewels.git
-cd praashi-jewels
+git clone https://github.com/tirthpatel2543/praashibysupal.git
+cd praashibysupal
 
 # Install dependencies
 npm install

@@ -12,6 +12,9 @@ export interface ApiRequest extends IncomingMessage {
 
 // Helper to parse JSON body
 export async function parseJsonBody(req: IncomingMessage): Promise<any> {
+  if ((req as any).body && typeof (req as any).body === 'object') {
+    return (req as any).body;
+  }
   return new Promise((resolve, reject) => {
     let body = '';
     req.on('data', (chunk) => {
